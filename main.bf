@@ -27,4 +27,5 @@
         // Memory is setup a specific way for this check
 ]
 >>  // Ignore padding 0's
+
 .>.>.>.>. // Print text!
