@@ -26,5 +26,5 @@
     >>  // Keep shifting until we find a 0 in memory
         // Memory is setup a specific way for this check
 ]
->>  // Ignore padding 0s
+>>  // Ignore padding 0's
 .>.>.>.>. // Print text!
