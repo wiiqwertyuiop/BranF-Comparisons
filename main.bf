@@ -1,24 +1,25 @@
 ,>, // Get two numbers
->+ // put create boolean set to true (1)
-<< // Go to start
+[-<->] // Comparison: subtract the two numbers from each other
++ // areEqual = True
 
-// Comparison
-[->-<] // Subtract the two numbers from each other
-
->[  // If result != 0 False
-    >>
-    ++++++++++[>+++++++<-]>.<
-    +++[>+++++++++<-]>.<
-    ++[>+++++<-]>+.
-    +++++++.<
-    ++[>-------<-]>.<
-    <-<[-]
+<[  // If result != 0:
+    >-  // areEqual = False
+    // print("False")
+    >   // Create loop counter
+    ++++++++++[>+++++++<-]>.
+    <+++[>+++++++++<-]>.
+    <++[>+++++<-]>+.
+    +++++++.
+    <++[>-------<-]>.
+    <<   // endif
 ]
->[  // else True
-    >
-    ++++++[>++++++++++++++<-]>.<
-    ++++++[>+++++<-]>.
-    +++.<
-    ++[>--------<-]>.<
-    <- // endif
+
+>[  // if areEqual == 1:
+    // print("True")
+    > // Create loop counter
+    ++++++[>++++++++++++++<-]>.
+    <++++++[>+++++<-]>.
+    +++.
+    <++[>--------<-]>.
+    <// endif
 ]
